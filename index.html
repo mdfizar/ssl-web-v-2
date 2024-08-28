@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Soft Solvency |   Innovation In Every Step</title>
+  <link rel="shortcut icon" href="src/assets/img/fav.png" title="softsolvency" sizes="16x16" />
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- aos  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- font icon  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <!-- begin custom css  -->
+   <link rel="stylesheet" href="src/assets/css/main.css">
+   <link rel="stylesheet" href="src/assets/css/bundle.css">
+   <link rel="stylesheet" href="src/assets/css/responsive.css">
+  <!-- begin custom css  -->
+</head>
+<body>
+  <!-- begin header  -->
+    <header>
+      <div class="header-container">
+        <nav class="navbar navbar-expand-lg w-100 p-0 align-items-center">
+          <a class="navbar-brand p-0" href="index.html">
+            <img style="width: 120px;" src="src/assets/img/logo.png" alt="softsolvency">
+          </a>
+          <div class="d-flex align-items-center">
+            <div class="d-block d-lg-none">
+              <div class="Dropdwon d-flex align-items-center gap-1 pa1">
+                <i class="fa-solid fa-globe"></i>
+                ENG
+                <i class="fa-solid fa-angle-right"></i>
+                <div class="Dropdown-item">
+                  <ul class="p-0">
+                    <li><a href="#" onclick="event.preventDefault();">Bangla</a></li>
+                    <li><a href="#" onclick="event.preventDefault();">English</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="tolggeicon d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <img src="src/assets/img/icon/menu-icon.svg" alt="menu icon">
+            </button>
+          </div>
+          <div class="container-fluid">
+            <div class="w-100">
+              <div class="d-flex align-items-center">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="product-dropdown">
+                        <a onclick=" event.preventDefault();" class="nav-link" aria-current="page" href="#">
+                          Service <span><i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i></span></a>
+                        <div class="product-dropdown-item">
+                          <div>
+                            <a class="nav-link" href="#">Custome Software Development</a>
+                            <a class="nav-link" href="#">Web Development</a>
+                            <a class="nav-link" href="#">Apps Development</a>
+                            <a class="nav-link" href="#">Digital Marketing</a>
+                            <a class="nav-link" href="#">POS (Point of Sale)</a>
+                            <a class="nav-link" href="#">NFC (Smart Business Card)</a>
+                            <a class="nav-link" href="#">Cloud Server(Aws,Azure, Digital Ocean)</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Our work</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div style="margin-right: 20px;" class="d-flex d-none d-lg-block">
+                 
+                </div>
+                <div class="d-flex d-none d-lg-block">
+                  <a style="width: 165px;" class="btn-qutation text-start fw-bold " href="#">Quetion</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-lg-block">
+            <div class="Dropdwon d-flex align-items-center gap-1 pa1">
+              <i class="fa-solid fa-globe"></i>
+              ENG
+              <i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i>
+              <div class="Dropdown-item">
+                <ul class="p-0">
+                  <li><a href="#" onclick="event.preventDefault();">English</a></li>
+                  <li><a href="#" onclick="event.preventDefault();">Bangla</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- begin offcanvas  -->
+      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand p-0" href="index.html">
+            <img style="width: 120px;" src="src/assets/img/logo.png" alt="softsolvency">
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button style="font-size: 17px;" class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Serveice
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <ul class="navbar-nav ps-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Custome Software Development</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Web Development</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Apps Development</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Digital Marketing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">POS (Point of Sale)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">>NFC (Smart Business Card)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Cloud Server(Aws,Azure, Digital Ocean)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registration</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand p-0" href="index.html">
+            <img style="width: 120px;" src="src/assets/img/fav.png" alt="softsolvency">
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button style="font-size: 17px;" class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Serveice
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <ul class="navbar-nav ps-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="brand-protection.html">Brand Protection</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Product Authentication</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Custom Solutions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end offcanvas  -->
+    </header>
+  <!-- end header  -->
+  <!-- begin main  -->
+   <main>
+    <!-- begin banner section  -->
+     <section class="banner-section">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left">
+              <h3 class="banner-title pb-4">Innovation in every step</h3>
+              <p class="banner-subtitle">Your Trusted Software Development Partner</p>
+              <p class="description-text">...SoftSolvency is a leading software development company specializing in creating innovative software solutions. We design and develop software, web applications, and mobile apps for a diverse range of industries</p>
+              <div class="mt-5">
+                <a class="contact-btn text-light" href="#">Contact for details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right" data-aos="fade-left">
+              <img class="w-100" src="https://zaagsys.com/_next/static/media/Frame.148dd5e1.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- end banner section  -->
+    <!-- begin company rank  -->
+     <section class="pb-5">
+      <div class="compnay-rank">
+        <div>
+          <div>
+            <div>
+              <span class="counter" data-speed="2000">7</span>
+              <span>+</span>
+            </div>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <span class="counter" data-speed="2000">150</span>
+              <span>+</span>
+            </div>
+            <p>Projects completed</p>
+          </div>
+        </div>
+        <div>
+         <div>
+          <div>
+            <div>
+              <span class="counter" data-speed="2000">160</span>
+              <span>+</span>
+            </div>
+            <p>Satisfied clients on 3 countries</p>
+          </div>
+         </div>
+        </div>
+      </div>
+     </section>
+    <!-- end company rank  -->
+    <!-- begin our service  -->
+    <section class="softsolvency-service pb-5">
+      <h3 class="section-heading pt-4" data-aos="fade-up">Our Service</h3>
+      <p class="section-title pb-4" data-aos="fade-up">We mainly focus on the following areas</p>
+      <div class="container">
+        <div class="row service-container">
+          <!-- Web Development -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h4 class="section-title">Web Development</h4>
+              <p class="description-text">
+                We create responsive and engaging websites tailored to your needs, ensuring a seamless user experience across all devices.
+              </p>
+            </div>
+          </div>
+          <!-- Software Development -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h4 class="section-title">Software Development</h4>
+              <p class="description-text">
+                We build robust and scalable software solutions designed to improve your business operations and enhance productivity.
+              </p>
+            </div>
+          </div>
+          <!-- Apps Development -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4 class="section-title">Apps Development</h4>
+              <p class="description-text">
+                Our team specializes in developing custom applications for various platforms, focusing on functionality and user engagement.
+              </p>
+            </div>
+          </div>
+          <!-- UI/UX Design -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4 class="section-title">UI/UX Design</h4>
+              <p class="description-text">
+                We design intuitive user interfaces and engaging user experiences that make your product stand out and improve user satisfaction.
+              </p>
+            </div>
+          </div>
+          <!-- Mobile App Development -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4 class="section-title">Mobile App Development</h4>
+              <p class="description-text">
+                From concept to deployment, we create mobile apps that are functional, user-friendly, and optimized for performance on all devices.
+              </p>
+            </div>
+          </div>
+          <!-- Cloud Services -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h4 class="section-title">Cloud Services</h4>
+              <p class="description-text">
+                We offer cloud-based solutions for storage, computing, and application hosting, providing scalability and flexibility for your business.
+              </p>
+            </div>
+          </div>
+          <!-- E-commerce Development -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-store"></i>
+              </div>
+              <h4 class="section-title">E-commerce Development</h4>
+              <p class="description-text">
+                Our e-commerce solutions are designed to drive sales and enhance the online shopping experience, with secure and scalable features.
+              </p>
+            </div>
+          </div>
+          <!-- SEO Optimization -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h4 class="section-title">SEO Optimization</h4>
+              <p class="description-text">
+                We optimize your website to improve search engine rankings, increase visibility, and attract more targeted traffic to your site.
+              </p>
+            </div>
+          </div>
+          <!-- API Integration -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-plug"></i>
+              </div>
+              <h4 class="section-title">API Integration</h4>
+              <p class="description-text">
+                We integrate third-party APIs to enhance your applications' capabilities, streamline workflows, and improve overall functionality.
+              </p>
+            </div>
+          </div>
+          <!-- Technical Support -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4 class="section-title">Technical Support</h4>
+              <p class="description-text">
+                Our dedicated support team is here to assist with any technical issues, ensuring smooth operation and quick resolution of problems.
+              </p>
+            </div>
+          </div>
+          <!-- Digital Marketing -->
+          <div class="col-lg-4">
+            <div class="service-type" data-aos="zoom-in">
+              <div class="overlay">
+                <div class="d-flex">
+                  <button>Read more</button>
+                  <button>Contact</button>
+                </div>
+              </div>
+              <div class="web-d-service-icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <h4 class="section-title">Digital Marketing</h4>
+              <p class="description-text">
+                We develop and execute digital marketing strategies to increase your online presence, engage with your audience, and drive growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+    <!-- end our service  -->
+    <!-- begin why Choose  -->
+    <section class="why-softsolvency py-5">
+      <h3 class="section-heading pb-4" data-aos="fade-up">Why Choose SoftSolvency</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 left">
+            <img class="w-100" src="https://softsolvency.com/frontend/assets/img/global2.png" alt="softsolvency">
+          </div>
+          <div class="col-lg-6 right">
+            <div class="d-flex align-items-start" data-aos="fade-right">
+              <span class="icon"><i class="fas fa-users"></i></span>
+              <div>
+                <h4>Expert Team</h4>
+                <p>
+                  Our team consists of industry experts with years of experience in web, app, and software development, ensuring top-notch quality in every project.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start" data-aos="fade-right">
+              <span class="icon"><i class="fas fa-cogs"></i></span>
+              <div>
+                <h4>Innovative Solutions</h4>
+                <p>
+                  We leverage cutting-edge technologies and innovative methodologies to deliver solutions that are both effective and future-proof.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start" data-aos="fade-right">
+              <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+              <div>
+                <h4>Affordable Pricing</h4>
+                <p>
+                  Our services are competitively priced, offering high-quality solutions that fit your budget, with flexible options to meet your financial needs.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start" data-aos="fade-right">
+              <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+              <div>
+                <h4>Timely Delivery</h4>
+                <p>
+                  We respect your deadlines and ensure timely delivery without compromising on quality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-3 d-flex">
+        <a class="schedule-btn" href="#">Schedule a call</a>
+      </div>
+    </section>    
+    <!-- end why Choose  -->
+    <!-- begin our team  -->
+     <section class="softsolvency-team pb-5">
+      <h3 class="section-heading pb-4" data-aos="fade-up">Meet our team</h3>
+      <div class="container">
+        <div class="row team-img">
+          <div class="col-md-6 col-lg-4">
+            <img class="w-100" src="https://media.istockphoto.com/id/1803992649/vector/software-development-coding-process-concept-programming-testing-cross-platform-code-app-on.jpg?s=612x612&w=0&k=20&c=9JX_Uhk0YSIqakQEXiSjo5NutvD4C8XOGIMc1cGRhiM=" alt="">
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img class="w-100" src="https://media.istockphoto.com/id/1803992649/vector/software-development-coding-process-concept-programming-testing-cross-platform-code-app-on.jpg?s=612x612&w=0&k=20&c=9JX_Uhk0YSIqakQEXiSjo5NutvD4C8XOGIMc1cGRhiM=" alt="">
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img class="w-100" src="https://media.istockphoto.com/id/1803992649/vector/software-development-coding-process-concept-programming-testing-cross-platform-code-app-on.jpg?s=612x612&w=0&k=20&c=9JX_Uhk0YSIqakQEXiSjo5NutvD4C8XOGIMc1cGRhiM=" alt="">
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img class="w-100" src="https://media.istockphoto.com/id/1803992649/vector/software-development-coding-process-concept-programming-testing-cross-platform-code-app-on.jpg?s=612x612&w=0&k=20&c=9JX_Uhk0YSIqakQEXiSjo5NutvD4C8XOGIMc1cGRhiM=" alt="">
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img class="w-100" src="https://media.istockphoto.com/id/1803992649/vector/software-development-coding-process-concept-programming-testing-cross-platform-code-app-on.jpg?s=612x612&w=0&k=20&c=9JX_Uhk0YSIqakQEXiSjo5NutvD4C8XOGIMc1cGRhiM=" alt="">
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img class="w-100" src="https://media.istockphoto.com/id/1803992649/vector/software-development-coding-process-concept-programming-testing-cross-platform-code-app-on.jpg?s=612x612&w=0&k=20&c=9JX_Uhk0YSIqakQEXiSjo5NutvD4C8XOGIMc1cGRhiM=" alt="">
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- end our team  -->
+   </main>
+  <!-- end main  -->
+  <!-- bootstrap  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <!-- aos  -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="src/js/animate.js"></script>
+  <!-- begin custom js  -->
+   <script src="src/js/main.js"></script>
+  <!-- end custom js  -->
+</body>
+</html>

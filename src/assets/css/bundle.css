@@ -1,0 +1,231 @@
+:root {
+  --logo-base-color: #004aad;
+  --white-color: #fff;
+  --pragraph-text: #293a4e;
+  --font-family: roboto;
+}
+
+/* begin global style  */
+.btn-qutation {
+  text-decoration: none;
+  text-align: center;
+  background-color: #fff;
+  color: var(--pragraph-text);
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 12px 16px;
+  transition: 0.4s;
+  font-family: roboto;
+}
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--pragraph-text);
+  text-align: center;
+}
+.section-title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: var(--pragraph-text);
+  text-align: center;
+}
+.description-text {
+  font-size: 16px;
+  font-family: var(--font-family);
+  color: var(--pragraph-text);
+  font-weight: 400;
+}
+/* end global style */
+
+main {
+  padding-top: 88px;
+}
+/* ======= begin banner section========================  */
+.banner-section {
+  background-image: url("/src/assets/img/");
+}
+.banner-title {
+  font-size: 55px;
+  color: var(--pragraph-text);
+  font-family: var(--font-family);
+}
+.banner-subtitle {
+  font-size: 20px;
+  color: var(--pragraph-text);
+  font-family: var(--font-family);
+}
+.contact-btn {
+  text-decoration: none;
+  padding: 13px 11px;
+  border-radius: 7px;
+  background-color: var(--logo-base-color);
+  transition: all 0.6s ease-in-out;
+  font-size: 17px;
+}
+.contact-btn:hover {
+  padding-right: 30px;
+}
+/* end banner section  */
+/* begin compnay rank  */
+.compnay-rank {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 20px;
+  overflow: auto;
+  justify-content: space-evenly;
+}
+.compnay-rank>div {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #004aad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: ;
+}
+.compnay-rank>div>div span {
+  color: var(--logo-base-color);
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+.compnay-rank>div>div p {
+  font-size: 20px;
+  font-family: var(--font-family);
+  color: var(--pragraph-text);
+}
+/* end compnay rank  */
+/* begin our service  */
+.softsolvency-service {
+  background-color: #f3f3f370;
+  background-image: url('../img/section-bg/service-bg.svg');
+background-position: cente;
+background-repeat: no-repeat;
+}
+.service-container {
+  row-gap: 25px;
+}
+.service-type {
+  padding: 20px;
+  border-radius: 7px;
+  position: relative;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.service-type .overlay {
+  position: absolute;
+  border-radius: 7px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgb(0 0 0 / 68%);
+  transition: all 0.7s ease-in-out;
+  opacity: 0;
+}
+.service-type:hover .overlay {
+  opacity: 1;
+}
+.service-type .overlay>div {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.service-type .overlay>div button {
+  height: fit-content;
+  padding: 10px 15px;
+  background-color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  color: var(--pragraph-text);
+  transition: background-color 0.6s ease-in-out;
+}
+.service-type .overlay>div button:hover {
+  background-color: #004aad;
+  color: #fff;
+}
+.service-type .description-text {
+  text-align: center;
+}
+.service-type .web-d-service-icon {
+  background-position: center;
+  height: 70px;
+  width: 70px;
+  background-image: url("../img/blob.svg");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid red;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+/* end our service  */
+/* begin why choose  */
+.why-softsolvency .left{
+  overflow: hidden;
+}
+.why-softsolvency .left img {
+  filter: contrast(0.2);
+  transition: all 1s ease-in-out;
+  animation: rotation 60s linear infinite;
+}
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+.why-softsolvency .right> div {
+ gap: 10px;
+}
+.why-softsolvency .right> div h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--pragraph-text);
+  font-family: var(--font-family);
+}
+.why-softsolvency .right> div p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--pragraph-text);
+}
+.why-softsolvency .right> div span i {
+  font-size: 20px;
+  color: var(--pragraph-text);
+}
+.schedule-btn {
+  text-decoration: none;
+  color: var(--logo-base-color);
+  font-size: 17px;
+  border: 1px solid var(--logo-base-color);
+  display: inline-block;
+  margin: auto;
+  padding: 10px 15px;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+}
+.schedule-btn:hover {
+  background-color: var(--logo-base-color);
+  color: #fff;
+}
+/* end why choose  */
+/* begin our team  */
+.softsolvency-team .row {
+  row-gap: 25px;
+}
